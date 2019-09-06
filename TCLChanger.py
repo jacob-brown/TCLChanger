@@ -30,7 +30,7 @@ def find_change_tcl():
     with open(fileTCL,'w') as f:
         for line in dfAll:
             if 'package require -exact Tcl' in line:                              
-                f.writelines("package require -exact Tcl 3.5-\n") # rollback to 3.5- rather than 3.6 
+                f.writelines("package require -exact Tcl 3.5.9\n") # rollback to 3.5.9 rather than 3.6 
             else:
                 f.writelines(line)
 
